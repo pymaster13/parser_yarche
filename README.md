@@ -33,7 +33,8 @@ python3 run.py
 ```
 
 Configuration features: 
-- categories - JSON (keys - tt_id, values - list of categories links);
+- categories - JSON (keys - tt_id, values - list of categories links).
+
 Example:
 ```
 "categories": {
