@@ -4,6 +4,7 @@ This project is parser for site https://yarcheplus.ru/ (2022).
 
 ## Getting Started
 Python version: 3.9.10
+
 Chrome version: 98.0.4758.80
 
 Clone project:
