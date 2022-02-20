@@ -1,0 +1,30 @@
+{
+    "output_directory": "out",         
+    "base_url": "https://yarcheplus.ru",
+    "chain_name": "Ярче",
+    "chain_id": 113,
+    "parser_id": "mc_test",
+    "tt_region": "msk",
+    "part_number": "p1",
+    "tt_id": ["Москва, Вересаева 10", "Томск, проспект Мира, 20"],
+    "categories": {
+        "Москва, Вересаева 10": [],
+        "Томск, проспект Мира, 20": []
+    },
+    "sku_images_enable": "true",
+    "sku_parameters_enable": "true",
+    "promo_only": "false",
+    "delay_range_s": "1-3",
+    "max_retries": 5,
+    "backoff_factor": 1,
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36 OPR/83.0.4254.27"
+    },
+    "logs_dir": "logs",
+    "email_from": {
+        "login": "promodata-parser-test@yandex.ru",
+        "password": "promodata-parser-test1",
+        "smtp": "smtp.yandex.ru"
+    }, 
+    "emails_to": ["pymaster13@yandex.ru"]
+}
