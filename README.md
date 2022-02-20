@@ -31,3 +31,13 @@ Run parser for getting information about products:
 ```
 python3 run.py
 ```
+
+Configuration features: 
+- categories - JSON (keys - tt_id, values - list of categories links);
+Example:
+```
+"categories": {
+        "Москва, Вересаева 10": ["/catalog/rastitelnye-masla-130", "/category/moloko-syr-yaytso-175", "/category/moloko-syr-yaytso-176"],
+        "Томск, проспект Мира, 20": ["/catalog/rastitelnye-masla-130", "/category/moloko-syr-yaytso-175", "/category/moloko-syr-yaytso-176"]
+    }
+```
