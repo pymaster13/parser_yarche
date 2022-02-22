@@ -3,12 +3,12 @@ Module allows to get all categories from site 'https://yarcheplus.ru/'
 and write them to .csv file
 """
 
-from bs4 import BeautifulSoup
 import csv
 from datetime import datetime
 import json
 import os
 
+from bs4 import BeautifulSoup
 from selenium.webdriver import Chrome
 
 from exceptions import (CreateLoggerFailed, ParseCategoriesFromListFailed,
@@ -33,6 +33,7 @@ def parse_categories_from_list(cats: list, result: dict = {}) -> dict:
 
     try:
         for cat in cats:
+            
             # if both == False - category is not showed on page
             if any((cat['isCatalogDisplay'], cat['isCategoryDisplay'])):
                 id = cat['treeId']

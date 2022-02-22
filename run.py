@@ -3,7 +3,6 @@ Module allows to get all products from site 'https://yarcheplus.ru/'
 and write them to .csv file
 """
 
-from bs4 import BeautifulSoup
 import csv
 from datetime import datetime
 from email.mime.application import MIMEApplication
@@ -17,6 +16,7 @@ import time
 from typing import Union
 import zipfile
 
+from bs4 import BeautifulSoup
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.action_chains import ActionChains
 
