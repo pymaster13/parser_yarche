@@ -32,13 +32,14 @@ Run parser for getting information about products:
 python3 run.py
 ```
 
-Configuration features: 
-- categories - JSON (keys - tt_id, values - list of categories links).
+Functional:
+- Authorization by phone number.
+Step 1 - Enter your phone number. Simulate sending a 4-digit authorization code (delay
+on the server 1-2 seconds).
+Step 2 - to enter the code. If the user has not previously authorized, then record it in the database.
+- Request for a user profile.
+- The user needs to be assigned a randomly generated 6-digit invite code (numbers and symbols) at the first authorization.
+- In the profile, the user should be able to enter someone else's invite code (when entering, check for existence). In your profile, you can activate only 1 invite code, if the user has already activated the invite code, then you need to display it in the appropriate field in the request for the user profile.
+- The profile API should display a list of users (phone numbers) who entered the invite code of the current user.
 
-Example:
-```
-"categories": {
-        "Москва, Вересаева 10": ["/catalog/rastitelnye-masla-130", "/category/moloko-syr-yaytso-175", "/category/moloko-syr-yaytso-176"],
-        "Томск, проспект Мира, 20": ["/catalog/rastitelnye-masla-130", "/category/moloko-syr-yaytso-175", "/category/moloko-syr-yaytso-176"]
-    }
-```
+Pythonanywhere: http://pymaster13.pythonanywhere.com/ (user database is SQLite because PGSQL is only allowed in paid account).
